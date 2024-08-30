@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- boostrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <marquee direction="up">
+        <h1 class="hd text-center mt-1"> CRED OPERATION</h1>
+    </marquee>
+
+
+    <div class="container ">
+        <div class="row mt-5">
+            <div class="box1 col-3 text-center pt-4 pb-4" id="sidebar-one">
+                <h5>POST DATA UPDATE</h5>
+                <input type="text" id="post-id" class="mb-1 px-4 py-1" placeholder="Id" />
+                <input type="text" id="post-title" class="mb-1 px-4 py-1" placeholder="Title" />
+                <input type="text" id="post-image" class="mb-1 px-4 py-1" placeholder="Image Url" />
+                <input type="text" id="post-category" class="mb-1 px-4 py-1" placeholder="Category" />
+                <input type="number" id="post-price" class="mb-1 px-4 py-1" placeholder="Price" />
+                <button id="add-post" class="px-5 py-1">
+                    POST
+                </button>
+
+
+
+                <h5 class="mt-5">PUT DATA UPDATE</h5>
+                <input type="text" id="update-put-id" class="mb-1 px-4 py-1" placeholder="ID" />
+                <input type="text" id="update-put-title" class="mb-1 px-4 py-1" placeholder="Title" />
+                <input type="text" id="update-put-image" class="mb-1 px-4 py-1" placeholder="Image Url" />
+                <input type="text" id="update-put-category" class="mb-1 px-4 py-1" placeholder="Category" />
+                <input type="number" id="update-put-price" class="mb-1 px-4 py-1" placeholder="Price" />
+                <button id="update-put" class="px-4 py-1">
+                    PUT
+                </button>
+
+
+
+
+
+                <h5 class="mt-5">UPDATE ONLY PRICE</h5>
+                <input type="text" id="update-id-patch" class="mb-1 px-4 py-1" placeholder="ID" />
+                <input type="number" id="update-price-patch" class="mb-1 px-4 py-1" placeholder="Price" />
+                <button id="update-patch" class="px-4 py-1">
+                    PATCH
+                </button>
+            </div>
+
+            <div class="box-2 col-9 bg-light">
+                <div class="col-12" id="Maindata" style="display:grid;grid-template-columns:repeat(2,1fr);">
+
+                </div>
+                <!-- <h1 class="text-light">helllo jj</h1> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

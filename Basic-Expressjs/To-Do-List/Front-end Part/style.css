@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hd{
+    font-size: 50px;
+    background: linear-gradient(to right, #f32170,rgb(140, 149, 244), #dbca30);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.box1{
+    background-color: rgb(140, 149, 244);
+    height: 900px;
+}
+
+#add-pitch{
+    border: 1px solid black;
+    background-color: rgb(158, 248, 242);
+    transition: all 0.5s ;
+    margin-top: 10px;
+}
+#add-pitch:hover{
+    background-color: black;
+    color: rgb(158, 248, 242);
+}
+
+
+
+#update-pitch{
+    border: 1px solid black;
+    background-color: rgb(158, 248, 242);
+    transition: all 0.5s ;
+    margin-top: 10px;
+}
+#update-pitch:hover{
+    background-color: black;
+    color: rgb(158, 248, 242);
+}
+
+
+#update-price-pitch{
+    border: 1px solid black;
+    background-color: rgb(158, 248, 242);
+    transition: all 0.5s ;
+    margin-top: 10px;
+}
+
+#update-price-pitch:hover{
+    background-color: black;
+    color: rgb(158, 248, 242);
+}
+
+
