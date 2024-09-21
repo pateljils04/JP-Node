@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container p-0">
+
+            <a class="navbar-brand" href="#"><img
+                    src="data:image/png;base64,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"
+                    alt="" height="50" width="50"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse  " id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link text-dark" href="home.ejs">Home</a>
+                    <a class="nav-link text-dark" href="about.ejs">About</a>
+                    <a class="nav-link text-dark" href="#">Contact</a>
+                    <a class="nav-link text-dark" href="#">Features</a>
+                    <a class="nav-link text-dark" href="#">Q&A</a>
+
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse  " id="navbarNavAltMarkup"></div>
+            <div class="navbar-nav ">
+                <a class="nav-link text-dark" href="#">Sign in</a>
+                <button type="button" class="btn btn-outline-warning">Get started</button>
+
+            </div>
+        </div>
+
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-dark" >
+            <div class="text-light text-center p-5">
+                <h1 class="mb-5">Contact Details</h1>
+                <% Contact.map((el)=>{ %>
+                    <h3>Name: <%=el.name  %></h3>
+                    <h3>Email_Id: <%=el.email  %></h3>
+                    <p>Message: <%= el.message %></p>
+               <%  }) %> 
+            </div>
+    </div>
+
+     
+    
+
+
+
+</body>
+
+</html>
