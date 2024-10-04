@@ -31,7 +31,6 @@ const PutMovies = async (req, res) => {
     }
 }
 
-
 const DleteMovies = async (req, res) => {
     try {
         const Moviesdata = await movieModel.findByIdAndDelete(req.params.movieid)

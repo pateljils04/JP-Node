@@ -1,7 +1,10 @@
 const jwt = require("jsonwebtoken");
+const dotenv=require("dotenv")
+dotenv.config()
+
 const auth = (req, res, next) => {
     const { token } = req.query;
-    jwt.verify(token, 'jilszvm', async function (err, decoded) {
+    jwt.verify(token,Private_Key, async function (err, decoded) {
         if (err) {
             res.status(400).json({ message: "you not access the movies" })
         } else {

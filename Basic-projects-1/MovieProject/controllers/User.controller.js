@@ -1,6 +1,8 @@
 const Usermodel = require("../model/user.model");
 const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
+const dotenv=require("dotenv");
+dotenv.config();
 
 
 const Getdata = async (req, res) => {
@@ -37,7 +39,7 @@ const Login = async (req, res) => {
 
         bcrypt.compare(password, hashpassword, function (err, result) {
             if (result) {
-                const token = jwt.sign({ userdata: isMatch }, "jilszvm")
+                const token = jwt.sign({ userdata: isMatch },Private_Key)
                 res.status(200).json({ message: "Login successfully", user: isMatch, token })
             }
             else {
